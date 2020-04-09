@@ -193,7 +193,7 @@
         function makeAuth(type) {
             return type === 'Basic'
                 ? 'Basic ' + btoa(`${appKey}:${appSecret}`)
-                : 'Kinvey ' + sessionStorage.getItem('authtoken');
+                : 'Kinvey ' + sessionStorage.getItem('authtoken'); 
         }
 
         function makeHeaders(method, data, type) {
